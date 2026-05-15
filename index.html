@@ -25,6 +25,8 @@
 <meta name="twitter:title" content="Neuroera — Neurociencia aplicada">
 <meta name="twitter:description" content="Aplicamos las neurociencias para entender, sanar y potenciar las inteligencias múltiples.">
 <meta name="twitter:image" content="https://neuroera.net/assets/img/og.jpg">
+<link rel="canonical" href="https://neuroera.net/">
+<meta name="theme-color" content="#060c16">
 
 <!-- Favicon -->
 <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
@@ -37,7 +39,7 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "MedicalBusiness",
+  "@type": "Organization",
   "name": "Neuroera",
   "description": "Aplicamos las neurociencias para entender, sanar y potenciar las inteligencias múltiples en personas, colegios y organizaciones.",
   "url": "https://neuroera.net",
@@ -56,6 +58,7 @@
 </script>
 </head>
 <body>
+<a href="#main" class="skip-link">Saltar al contenido principal</a>
 
 <!-- ─── Header ─── -->
 <header class="header" id="header">
@@ -81,7 +84,7 @@
     </button>
   </div>
 
-  <nav class="mobile-nav" id="mobile-nav" aria-label="Navegación móvil">
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Navegación móvil" role="dialog" aria-modal="true">
     <a href="#personas" class="nav-link">Personas</a>
     <a href="#colegios" class="nav-link">Colegios</a>
     <a href="#empresas" class="nav-link">Empresas</a>
@@ -100,7 +103,7 @@
 <!-- ─── Hero ─── -->
 <section class="hero" aria-labelledby="hero-title">
   <!-- Placeholder background -->
-  <div class="hero-bg" style="background: linear-gradient(135deg, #060c16 0%, #002156 50%, #1e5aff 100%);"></div>
+  <div class="hero-bg"></div>
   <div class="hero-overlay"></div>
 
   <div class="container">
@@ -116,7 +119,7 @@
         <a href="#metodo" class="btn btn-secondary btn-large">Conocer el método</a>
       </div>
     </div>
-    <img src="assets/img/hero-isotipo.png" alt="" class="hero-logo-right" aria-hidden="true" width="500" height="auto">
+    <img src="assets/img/hero-isotipo.png" alt="" class="hero-logo-right" aria-hidden="true" width="500" height="500" decoding="async" fetchpriority="high">
   </div>
 </section>
 
@@ -131,8 +134,7 @@
     <div class="card-grid audience-cards">
       <!-- Personas -->
       <article class="card" id="personas">
-        <div class="card-img" role="img" aria-label="Personas — Ilustración placeholder" 
-             style="background: linear-gradient(135deg, #eaf2ff 0%, #cce2f9 100%);"></div>
+        <div class="card-img card-img--personas" role="img" aria-label="Personas — Ilustración placeholder"></div>
         <span class="card-label">Personas</span>
         <h3>Recupera tu equilibrio</h3>
         <p>Evaluación objetiva con mapeo cerebral, pruebas neuropsicológicas y un plan de neurocoaching diseñado a tu medida.</p>
@@ -145,8 +147,7 @@
 
       <!-- Colegios -->
       <article class="card" id="colegios">
-        <div class="card-img" role="img" aria-label="Colegios — Ilustración placeholder" 
-             style="background: linear-gradient(135deg, #f4f7ff 0%, #c8f1ed 100%);"></div>
+        <div class="card-img card-img--colegios" role="img" aria-label="Colegios — Ilustración placeholder"></div>
         <span class="card-label">Colegios</span>
         <h3>Mapeo cerebral</h3>
         <p>Programas para colegios que entienden cómo aprende cada estudiante, con respaldo académico.</p>
@@ -159,8 +160,7 @@
 
       <!-- Organizaciones -->
       <article class="card" id="empresas">
-        <div class="card-img" role="img" aria-label="Organizaciones — Ilustración placeholder" 
-             style="background: linear-gradient(135deg, #e9edf0 0%, #d4d3d3 100%);"></div>
+        <div class="card-img card-img--organizaciones" role="img" aria-label="Organizaciones — Ilustración placeholder"></div>
         <span class="card-label">Organizaciones</span>
         <h3>Capital humano medido con inteligencia biológica</h3>
         <p>Auditoría neurocognitiva para líderes y equipos: menos burnout, mejor toma de decisiones.</p>
@@ -223,7 +223,7 @@
       </article>
     </div>
 
-    <div class="text-center" style="margin-top: var(--space-12);">
+    <div class="text-center method-cta">
       <a href="https://wa.me/584122344556?text=Hola%2C%20quiero%20iniciar%20mi%20Neuro-Auditor%C3%ADa." 
          class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">
         <svg width="20" height="20"><use href="assets/icons/sprite.svg#icon-whatsapp"/></svg>
