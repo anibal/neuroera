@@ -26,13 +26,13 @@
   /* Scale */
   --text-xs: 0.75rem;    /* 12px */
   --text-sm: 0.875rem;   /* 14px */
-  --text-base: 1rem;     /* 16px */
-  --text-lg: 1.125rem;   /* 18px */
-  --text-xl: 1.25rem;    /* 20px */
-  --text-2xl: 1.5rem;    /* 24px */
-  --text-3xl: 2rem;      /* 32px */
-  --text-4xl: 2.5rem;    /* 40px */
-  --text-5xl: 3rem;      /* 48px */
+  --text-base: 1.125rem; /* 18px */
+  --text-lg: 1.25rem;    /* 20px */
+  --text-xl: 1.5rem;     /* 24px */
+  --text-2xl: 1.875rem;  /* 30px */
+  --text-3xl: 2.5rem;    /* 40px */
+  --text-4xl: 3rem;      /* 48px */
+  --text-5xl: 3.5rem;    /* 56px */
 
   /* Spacing */
   --space-1: 0.25rem;
@@ -371,13 +371,13 @@ p {
 }
 
 .hero-content {
-  max-width: 720px;
+  max-width: 800px;
 }
 
 .hero h1 {
   font-size: var(--text-4xl);
   color: var(--color-white);
-  line-height: 1.15;
+  line-height: 1.1;
   letter-spacing: -0.02em;
 }
 
@@ -797,8 +797,8 @@ button:focus-visible {
 /* ─── Tablet (768px+) ─── */
 @media (min-width: 768px) {
   :root {
-    --text-4xl: 3rem;
-    --text-5xl: 4rem;
+    --text-4xl: 3.5rem;
+    --text-5xl: 4.5rem;
   }
 
   .container {
@@ -859,7 +859,7 @@ button:focus-visible {
   }
 
   .hero h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 
   .hero-logo-right {
@@ -882,7 +882,7 @@ button:focus-visible {
 /* ─── Large Desktop (1280px+) ─── */
 @media (min-width: 1280px) {
   .hero h1 {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
 
   .hero-logo-right {
