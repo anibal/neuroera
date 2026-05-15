@@ -381,18 +381,9 @@ p {
   letter-spacing: -0.02em;
 }
 
-.hero-brand {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: var(--space-6);
-  margin-bottom: var(--space-6);
-}
-
-.hero-logo {
-  width: 120px;
-  height: auto;
-  opacity: 0.85;
+.hero-logo-right {
+  display: none;
+  pointer-events: none;
 }
 
 .hero p {
@@ -822,17 +813,6 @@ button:focus-visible {
     font-size: var(--text-5xl);
   }
 
-  .hero-brand {
-    flex-direction: row;
-    align-items: center;
-    gap: var(--space-8);
-  }
-
-  .hero-logo {
-    width: 140px;
-    flex-shrink: 0;
-  }
-
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -886,8 +866,16 @@ button:focus-visible {
     font-size: 3.5rem;
   }
 
-  .hero-logo {
-    width: 160px;
+  .hero-logo-right {
+    display: block;
+    position: absolute;
+    right: var(--space-4);
+    top: 50%;
+    transform: translateY(-50%) scaleX(-1);
+    width: 420px;
+    height: auto;
+    opacity: 0.9;
+    z-index: 1;
   }
 
   .section {
@@ -899,5 +887,9 @@ button:focus-visible {
 @media (min-width: 1280px) {
   .hero h1 {
     font-size: 4rem;
+  }
+
+  .hero-logo-right {
+    width: 480px;
   }
 }
