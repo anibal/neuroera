@@ -353,8 +353,9 @@ p {
 .hero-bg {
   position: absolute;
   inset: 0;
-  opacity: 0.35;
-  object-fit: cover;
+  background-image: url('../img/hero-bg.jpg');
+  background-size: cover;
+  background-position: center top;
   width: 100%;
   height: 100%;
 }
@@ -362,7 +363,7 @@ p {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(6, 12, 22, 0.9) 0%, rgba(6, 12, 22, 0.6) 100%);
+  background: linear-gradient(to right, rgba(6, 12, 22, 0.88) 0%, rgba(6, 12, 22, 0.55) 45%, rgba(6, 12, 22, 0.15) 100%);
 }
 
 .hero .container {
@@ -379,11 +380,6 @@ p {
   color: var(--color-white);
   line-height: 1.15;
   letter-spacing: -0.02em;
-}
-
-.hero-logo-right {
-  display: none;
-  pointer-events: none;
 }
 
 .hero p {
@@ -862,16 +858,8 @@ button:focus-visible {
     font-size: 3.5rem;
   }
 
-  .hero-logo-right {
-    display: block;
-    position: absolute;
-    right: var(--space-8);
-    top: 50%;
-    transform: translateY(-50%) scaleX(-1);
-    width: 360px;
-    height: auto;
-    opacity: 0.85;
-    z-index: 1;
+  .hero-content {
+    max-width: 580px;
   }
 
   .section {
@@ -885,7 +873,4 @@ button:focus-visible {
     font-size: 4rem;
   }
 
-  .hero-logo-right {
-    width: 420px;
-  }
 }
