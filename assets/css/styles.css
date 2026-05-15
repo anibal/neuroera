@@ -227,16 +227,15 @@ p {
   height: 100%;
 }
 
-.logo {
-  font-family: var(--font-heading);
-  font-size: var(--text-xl);
-  font-weight: 700;
-  color: var(--color-dark);
-  letter-spacing: -0.02em;
+.logo-link {
+  display: inline-flex;
+  align-items: center;
 }
 
-.logo span {
-  color: var(--color-blue);
+.logo-img {
+  height: 36px;
+  width: auto;
+  display: block;
 }
 
 .nav-desktop {
@@ -660,10 +659,14 @@ p {
   margin-bottom: var(--space-10);
 }
 
-.footer-brand .logo {
-  color: var(--color-white);
+.footer-brand .logo-link {
   margin-bottom: var(--space-3);
   display: inline-block;
+}
+
+.footer-brand .logo-img {
+  height: 36px;
+  width: auto;
 }
 
 .footer-brand p {
