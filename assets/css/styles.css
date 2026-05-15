@@ -664,14 +664,10 @@ p {
   margin-bottom: var(--space-10);
 }
 
-.footer-brand .logo-link {
+.footer-brand .logo {
+  color: var(--color-white);
   margin-bottom: var(--space-3);
   display: inline-block;
-}
-
-.footer-brand .logo-img {
-  height: 36px;
-  width: auto;
 }
 
 .footer-brand p {
