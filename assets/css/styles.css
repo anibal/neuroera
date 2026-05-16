@@ -889,6 +889,10 @@ button:focus-visible {
     display: none;
   }
 
+  .hero-title-line {
+    display: block;
+  }
+
   .hero .container {
     flex-direction: row;
     text-align: left;
