@@ -373,6 +373,11 @@ p {
 .hero .container {
   position: relative;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-6);
 }
 
 .hero-content {
@@ -387,7 +392,11 @@ p {
 }
 
 .hero-logo-right {
-  display: none;
+  display: block;
+  width: 120px;
+  height: auto;
+  opacity: 0.9;
+  order: -1;
   pointer-events: none;
   aspect-ratio: 1 / 1;
 }
@@ -403,6 +412,7 @@ p {
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: var(--space-4);
 }
 
@@ -879,6 +889,16 @@ button:focus-visible {
     display: none;
   }
 
+  .hero .container {
+    flex-direction: row;
+    text-align: left;
+    gap: 0;
+  }
+
+  .hero-actions {
+    justify-content: flex-start;
+  }
+
   .hero-logo-right {
     display: block;
     position: absolute;
@@ -889,6 +909,7 @@ button:focus-visible {
     height: auto;
     opacity: 0.85;
     z-index: 1;
+    order: 0;
   }
 
   .section {
